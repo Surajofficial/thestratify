@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+
+/* card css  */
+.cards:hover {
+  color: white !important;
+}
+
+.cards a {
+  color: inherit;
+}
+
+.cards a:hover {
+  color: white;
+}
+
+/* Home page slider css  */
+.carousel-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-position: cover !important;
+  color: red !important;
+}
+
+#hero img {
+  position: unset !important;
+}
+
+.carousel-caption {
+  top: 30% !important;
+  color: black !important
+}
+
+.carousel-indicators {
+  top: 90%;
+}
+
+.carousel-indicators button {
+
+  cursor: pointer;
+  background: #2e33e9 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50px !important;
+  margin-bottom: 180px !important;
+  opacity: 0.2;
+}
+
+.carousel-indicators button .active {
+  opacity: 1 !important;
+}
+
+.carousel-control-prev:before {
+  left: 20%
+}
+
+#hero .carousel-control-next,
+#hero .carousel-control-prev {
+  color: black !important;
+  z-index: 99999999999999999;
+}
+
+.carousel img {
+  height: auto !important;
+
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel,
+#hero {
+  height: auto !important;
+  max-height: 50vh !important;
+}

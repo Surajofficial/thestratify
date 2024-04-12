@@ -1,0 +1,14 @@
+{
+    "client": [{
+        "id": 1,
+        "client": [
+            "/assets/img/clients/multitech.png",
+            "/assets/img/clients/awish.png",
+            "/assets/img/clients/proweb.png",
+            "/assets/img/clients/unique.png",
+            "/assets/img/clients/mttools.png"
+        ],
+        "heading": "Our Clients",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }]
+}

@@ -1,0 +1,24 @@
+{
+    "feature": [{
+            "id": 1,
+            "icon": "<i class='bi bi-android text-center'></i>",
+            "link": "/",
+            "title": "Website & App Development",
+            "dec": ""
+        },
+        {
+            "id": 2,
+            "icon": "<i class='bi bi-cart text-center'></i>",
+            "link": "/",
+            "title": "Ecommerce Development",
+            "dec": ""
+        },
+        {
+            "id": 3,
+            "icon": "<i class='bi bi-globe text-center'></i>",
+            "link": "/",
+            "title": "Digital Marketing",
+            "dec": ""
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "client": [{
+        "id": 1,
+        "client": [
+            "/assets/img/clients/client-1.png",
+            "/assets/img/clients/client-2.png",
+            "/assets/img/clients/client-3.png",
+            "/assets/img/clients/client-4.png"
+        ],
+        "heading": "Bootstrap Carousel Example",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }]
+}

@@ -1,0 +1,36 @@
+{
+    "counter": [
+        {
+            "id": 1,
+            "count": 100,
+            "icon": "bi bi-people",
+            "linktext": "Read More",
+            "link": "/",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id": 2,
+            "count": 100,
+            "icon": "bi bi-headset",
+            "linktext": "Read More",
+            "link": "/",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id": 3,
+            "count": 100,
+            "icon": "bi  bi-journal-richtext",
+            "linktext": "Read More",
+            "link": "/",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id": 4,
+            "count": 100,
+            "icon": "bi bi-emoji-smile",
+            "linktext": "Read More",
+            "link": "/",
+            "para": "<strong>Team</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ]
+}

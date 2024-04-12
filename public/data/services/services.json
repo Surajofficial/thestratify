@@ -1,0 +1,46 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "icon": " <i class='bx bxl-dribbble'></i>",
+            "link": "/",
+            "title": "Photography",
+            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+        },
+        {
+            "id": 2,
+            "icon": "<i class='bx bx-tachometer'></i>",
+            "link": "/",
+            "title": "City Views",
+            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+        },
+        {
+            "id": 3,
+            "icon": "<i class='bx bx-world'></i>",
+            "link": "/",
+            "title": "Wild Life",
+            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+        },
+        {
+            "id": 4,
+            "icon": "<i class='bx bx-slideshow'></i>",
+            "link": "/",
+            "title": "Wild Life",
+            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+        },
+        {
+            "id": 5,
+            "icon": "<i class='bx bx-arch'></i>",
+            "link": "/",
+            "title": "Wild Life",
+            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+        },
+        {
+            "id": 6,
+            "icon": "<i class='bx bx-file'></i>",
+            "link": "/",
+            "title": "Wild Life",
+            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+        }
+    ]
+}
