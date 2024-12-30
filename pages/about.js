@@ -76,7 +76,7 @@ export default function about(props) {
     )
 }
 export async function getServerSideProps(context) {
-    let aboutData = await axios('https://thestratify.com/api/about/about')
+    let aboutData = await axios('https://thestratify.com/api/about')
     let aboutData1 = aboutData.data
     return {
         props: { aboutData1 }, // will be passed to the page component as props

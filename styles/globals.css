@@ -96,3 +96,25 @@ a {
   height: auto !important;
   max-height: 50vh !important;
 }
+
+#topbar {
+  background-color: #1018fae2 !important
+}
+
+#topbar .contact-info i a:hover {
+  color: #fbfbfb !important;
+}
+
+#topbar a:hover {
+  color: #fbfbfb !important;
+}
+
+#topbar .contact,
+#topbar a {
+  color: #bababa !important;
+  cursor: pointer !important;
+}
+
+.bi-x {
+  font-size: 22px !important;
+}

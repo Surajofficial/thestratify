@@ -29,15 +29,15 @@ export default function footer() {
                             <div className="col-lg-3 col-md-6 footer-links">
                                 <h4>Useful Links</h4>
                                 <ul>
-                                    <li><i className="bx bx-chevron-right"></i> <Link href="#">Home</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link href="#">About us</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link href="#">Services</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link href="#">Terms of service</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link href="#">Privacy policy</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link href="/">Home</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link href="/about">About us</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link href="/services">Services</Link></li>
+                                    {/* <li><i className="bx bx-chevron-right"></i> <Link href="#">Terms of service</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link href="#">Privacy policy</Link></li> */}
                                 </ul>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 footer-links">
+                            {/* <div className="col-lg-3 col-md-6 footer-links">
                                 <h4>Our Services</h4>
                                 <ul>
                                     <li><i className="bx bx-chevron-right"></i> <Link href="#">Web Design</Link></li>
@@ -46,26 +46,24 @@ export default function footer() {
                                     <li><i className="bx bx-chevron-right"></i> <Link href="#">Marketing</Link></li>
                                     <li><i className="bx bx-chevron-right"></i> <Link href="#">Graphic Design</Link></li>
                                 </ul>
-                            </div>
+                            </div> */}
 
                             <div className="col-lg-3 col-md-6 footer-contact">
                                 <h4>Contact Us</h4>
                                 <p>
                                     <strong>Phone:</strong> +917800990208<br />
-                                    <strong>Email:</strong> info@the.com<br />
+                                    <strong>Email:</strong> info@thestratify.com<br />
                                 </p>
-
                             </div>
 
                             <div className="col-lg-3 col-md-6 footer-info">
                                 <h3>About Stratify</h3>
                                 <p>website and app development services company.</p>
                                 <div className="social-links mt-3">
-                                    <Link href="#" className="twitter"><i className="bx bxl-twitter"></i></Link>
-                                    <Link href="#" className="facebook"><i className="bx bxl-facebook"></i></Link>
-                                    <Link href="#" className="instagram"><i className="bx bxl-instagram"></i></Link>
-                                    <Link href="#" className="google-plus"><i className="bx bxl-skype"></i></Link>
-                                    <Link href="#" className="linkedin"><i className="bx bxl-linkedin"></i></Link>
+                                    <Link href="https://x.com/the_stratify/" className="twitter" target='_blank'><i className="bi bi-x"></i></Link>
+                                    <Link href="https://www.facebook.com/share/1SdWRK44wu/" className="facebook" target='_blank'><i className="bi bi-facebook"></i></Link>
+                                    <Link href="https://www.instagram.com/thestratify_/profilecard/?igsh=MXV6Y3lpZXIwM2dmbA==" className="instagram" target='_blank'><i className="bi bi-instagram"></i></Link>
+                                    <Link href="https://www.linkedin.com/in/stratify-stratify-95a213344/" className="linkedin" target='_blank'><i className="bi bi-linkedin"></i></Link>
                                 </div>
                             </div>
 
@@ -75,14 +73,13 @@ export default function footer() {
 
                 <div className="container">
                     <div className="copyright">
-                        &copy; Copyright <strong><span>Startify</span></strong>. All Rights Reserved
+                        &copy;Copyright <strong><span>Startify</span></strong>. All Rights Reserved
                     </div>
                     <div className="credits">
-
-                        Designed by <Link href="https://thestratify.com/">Suraj Tiwari</Link>
+                        Designed by <Link href="https://thestratify.com/" className='text-success fs-100' style={{ 'fontWeight': 900 }}>Suraj Tiwari</Link>
                     </div>
                 </div>
-            </footer>
+            </footer >
             <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
             <Script src="assets/vendor/purecounter/purecounter_vanilla.js"></Script>
             <Script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
