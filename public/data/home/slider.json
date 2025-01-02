@@ -4,13 +4,13 @@
             "id": 1,
             "title": "Smart Digital Solutions for Growing SMEs & MSMEs",
             "body": "Join us as we elevate your digital journey, where debugging is just a bump in the matrix and dreams come true. 'Welcome to the innovative geek side of things!",
-            "imageUrl": "/assets/img/slide/slide.webp"
+            "imageUrl": "/assets/img/slide/slide-1.jpg"
         },
         {
             "id": 2,
             "title": "Our Vision",
             "body": "We enable SMEs in making the best use of emerging digital technologies to build stronger capabilities & seize growth opportunities in today’s ever-evolving digital economy.",
-            "imageUrl": "/assets/img/slide/slide.webp"
+            "imageUrl": "/assets/img/slide/slide-1.jpg"
         }
     ]
 }
