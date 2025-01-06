@@ -1,6 +1,6 @@
 import React from 'react'
 import CounteInner from './counterInner'
-import items from '../../public/data/about/counter'
+import items from '../../public/data/about/counter.json'
 
 export default function counter() {
     const counter = items.counter

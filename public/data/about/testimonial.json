@@ -2,45 +2,45 @@
     "testimonial": [
         {
             "id": 1,
-            "name": "Fist",
-            "profile": "assets/img/testimonials/testimonials-1.jpg",
-            "position": "CEO",
-            "speech": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "name": "John D.",
+            "profile": "assets/img/testimonials/client1.webp",
+            "position": "CEO at NextTech Solutions",
+            "speech": "Working with Stratify was a game-changer for our business. Their development team understood our vision and transformed it into a sleek, high-performing website. Their professionalism and attention to detail set them apart."
         },
         {
             "id": 2,
-            "name": "100",
-            "profile": "assets/img/testimonials/testimonials-2.jpg",
-            "position": "CEO",
-            "speech": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "name": "Sarah M.",
+            "profile": "assets/img/testimonials/client2.webp",
+            "position": "Marketing Director at Visionary Designs",
+            "speech": "Stratify helped us rebrand our website, and the results were phenomenal. Our engagement rates skyrocketed by 45%. The team is talented, responsive, and always ready to go the extra mile."
         },
         {
             "id": 3,
-            "name": "100",
-            "profile": "assets/img/testimonials/testimonials-3.jpg",
-            "position": "CEO",
-            "speech": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "name": "Michael R.",
+            "profile": "assets/img/testimonials/client3.webp",
+            "position": "Founder of BrightPath Innovations",
+            "speech": "From concept to deployment, Stratify exceeded our expectations. Their custom software solution streamlined our workflow, improving efficiency across the board. I highly recommend them!"
         },
         {
             "id": 4,
-            "name": "100",
-            "profile": "assets/img/testimonials/testimonials-4.jpg",
-            "position": "CEO",
-            "speech": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "name": "Laura B",
+            "profile": "assets/img/testimonials/client4.webp",
+            "position": "COO at CreativePixel Studio",
+            "speech": "Stratify's graphic design expertise brought our brand to life. The new website and marketing materials they developed helped us attract new clients and stand out in a competitive market."
         },
         {
             "id": 5,
-            "name": "100",
-            "profile": "assets/img/testimonials/testimonials-5.jpg",
-            "position": "CEO",
-            "speech": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "name": "James K.",
+            "profile": "assets/img/testimonials/client5.webp",
+            "position": "IT Manager at Horizon Systems",
+            "speech": "Their technical expertise and dedication to quality are unmatched. Stratify developed our e-commerce platform seamlessly, delivering it on time and within budget. A great experience!"
         },
         {
             "id": 6,
-            "name": "100",
-            "profile": "assets/img/testimonials/testimonials-6.jpg",
-            "position": "CEO",
-            "speech": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "name": "Emma C.",
+            "profile": "assets/img/testimonials/client6.webp",
+            "position": "Product Manager at SkyBridge Networks",
+            "speech": "Stratify's team made our mobile app project a success. They were proactive, communicative, and highly skilled in app development. The final product exceeded our expectations."
         }
     ]
 }

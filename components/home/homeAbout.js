@@ -1,6 +1,6 @@
 import React from 'react'
 import About from '../common/about'
-import items from '../../public/data/home/homeabout'
+import items from '../../public/data/home/homeabout.json'
 export default function homeAout() {
     const about = items.about
     return (

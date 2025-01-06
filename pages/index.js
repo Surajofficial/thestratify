@@ -16,8 +16,8 @@ export default function Home() {
       }}>
       <Head>
         <title>Smart Digital Solutions for Growing SMEs & MSMEs</title>
-        < meta name = "description"
-        content = 'Join us as we elevate your digital journey, where debugging is just a bump in the matrix and dreams come true. "Welcome to the innovative geek side of things!' / >
+        < meta name="description"
+          content='Join us as we elevate your digital journey, where debugging is just a bump in the matrix and dreams come true. "Welcome to the innovative geek side of things!' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -40,7 +40,6 @@ export default function Home() {
         </section>
         <HomeClient />
       </main>
-
     </motion.div>
   )
 }

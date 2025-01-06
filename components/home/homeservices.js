@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeCardInner from './homeCardInner'
 import Card from '../common/card'
-import Items from '../../public/data/home/homeservices'
+import Items from '../../public/data/home/homeservices.json'
 
 export default function homeservices() {
     const feature = Items.services
@@ -9,7 +9,7 @@ export default function homeservices() {
         <div className="row">
             {
                 feature.map((item, key) => (<Card
-                    classes="col-lg-4 col-md-6 d-flex align-items-stretch  mt-4"
+                    classes="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
                     key={key}
                     data={
 

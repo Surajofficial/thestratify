@@ -25,11 +25,9 @@ export default function about(props) {
                 <About props={props.aboutData1} />
                 <section id="counts" class="counts">
                     <div class="container">
-
                         <div class="row no-gutters">
                             <Counter />
                         </div>
-
                     </div>
                 </section>
                 <section id="testimonials" class="testimonials">
@@ -37,7 +35,7 @@ export default function about(props) {
 
                         <div class="section-title">
                             <h2>Testimonials</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <p>We value the trust our clients place in us. Let's collaborate to turn your ideas into reality and drive success together.</p>
                         </div>
 
                         <div class="row">

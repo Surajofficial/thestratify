@@ -1,7 +1,7 @@
 import React from 'react'
 import ServicesCardInner from './servicesCardInner'
 import Card from '../common/card'
-import Items from '../../public/data/services/services'
+import Items from '../../public/data/services/services.json'
 
 export default function services() {
     const services = Items.services

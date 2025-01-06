@@ -1,14 +1,16 @@
 {
-    "client": [{
-        "id": 1,
-        "client": [
-            "/assets/img/clients/multitech.png",
-            "/assets/img/clients/awish.png",
-            "/assets/img/clients/proweb.png",
-            "/assets/img/clients/unique.png",
-            "/assets/img/clients/mttools.png"
-        ],
-        "heading": "Our Clients",
-        "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }]
+    "client": [
+        {
+            "id": 1,
+            "client": [
+                "/assets/img/clients/multitech.png",
+                "/assets/img/clients/awish.png",
+                "/assets/img/clients/proweb.png",
+                "/assets/img/clients/unique.png",
+                "/assets/img/clients/mttools.png"
+            ],
+            "heading": "Our Clients",
+            "para": "We are proud to collaborate with industry leaders and innovators. Our clients trust us to deliver cutting-edge solutions that drive growth and success."
+        }
+    ]
 }

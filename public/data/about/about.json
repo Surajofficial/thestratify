@@ -4,15 +4,22 @@
             "id": 1,
             "icon": "<i class='bi bi-card-checklist text-center'></i>",
             "point": [
-                "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                " Duis aute irure dolor in reprehenderit in voluptate velit.",
-                " Duis aute irure dolor in reprehenderit in voluptate velit.",
-                " Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur."
+                "Web Design, Development & Maintenance",
+                "Mobile App Design, Development & Maintenance",
+                "Paid Advertising",
+                "Social Media Marketing",
+                "Ecommerce Web & App Development",
+                "UI/UX Design",
+                "AI & Machine Learning Solutions",
+                "Cybersecurity Solutions",
+                "Blockchain Development",
+                "Cloud Solutions & Migration",
+                "Support & Maintenance"
             ],
-            "imageSrc": "/assets/img/about.jpg",
-            "heading": "Bootstrap Carousel Example",
-            "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "p2": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "imageSrc": "/assets/img/website and app development services company.jpg",
+            "heading": "About Us",
+            "heading2": "Stratify offers a range of services to help our clients",
+            "p1": "We love challenges. So when you have a challenge, bring your problem statement to us, and we'll get our brains rolling to come up with the best solution to address it with the best software."
         }
     ]
 }

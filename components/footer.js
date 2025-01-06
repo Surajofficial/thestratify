@@ -10,7 +10,7 @@ export default function footer() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <h4>Our Newsletter</h4>
-                                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                                <p>Join 5,000+ subscribers who are growing their businesses with our tech insights.</p>
                             </div>
                             <div className="col-lg-6">
                                 <form action="" method="post">

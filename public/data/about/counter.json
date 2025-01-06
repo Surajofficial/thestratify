@@ -6,7 +6,7 @@
             "icon": "bi bi-people",
             "linktext": "Read More",
             "link": "/",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "para": "We’ve partnered with over 100 clients to help them achieve digital success through innovative technology solutions."
         },
         {
             "id": 2,
@@ -14,23 +14,23 @@
             "icon": "bi bi-headset",
             "linktext": "Read More",
             "link": "/",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "para": "Successfully delivered 100+ projects across web development, mobile apps, and custom software solutions."
         },
         {
             "id": 3,
-            "count": 100,
+            "count": 2,
             "icon": "bi  bi-journal-richtext",
             "linktext": "Read More",
             "link": "/",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "para": "With over 2 years of experience, we continue to lead in delivering cutting-edge IT solutions."
         },
         {
             "id": 4,
-            "count": 100,
+            "count": 10,
             "icon": "bi bi-emoji-smile",
             "linktext": "Read More",
             "link": "/",
-            "para": "<strong>Team</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "para": "Our dedicated team of 10+ experts is driven by passion and innovation to bring your ideas to life."
         }
     ]
 }

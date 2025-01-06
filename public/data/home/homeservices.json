@@ -1,18 +1,19 @@
 {
-    "services": [{
+    "services": [
+        {
             "id": 1,
             "icon": "<i class='bx bx-globe'></i>",
             "link": "/",
             "title": "Web Development",
             "dec": "From concept to execution, we specialize in creating responsive and visually stunning websites. Elevate your online presence and leave a lasting impression on your audience."
-        }, {
+        },
+        {
             "id": 2,
             "icon": " <i class='bx bxl-android'></i>",
             "link": "/",
             "title": "App Development",
             "dec": "Turn your ideas into reality with our bespoke app development services. Whether it's iOS or Android, we build user-friendly and feature-rich applications that stand out in the crowded app market."
         },
-
         {
             "id": 3,
             "icon": "<i class='bx bx-user'></i>",

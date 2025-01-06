@@ -8,7 +8,7 @@ export default function homeCard() {
         <>
             {
                 feature.map((item, key) => (<Card
-                    classes="col-lg-4 cards text-center"
+                    classes="col-lg-4 cards text-center mt-3"
                     key={key}
                     data={
 

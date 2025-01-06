@@ -2,45 +2,108 @@
     "services": [
         {
             "id": 1,
-            "icon": " <i class='bx bxl-dribbble'></i>",
+            "icon": "<i class='bx bx-globe'></i>",
             "link": "/",
-            "title": "Photography",
-            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+            "title": "Web Development",
+            "dec": "From concept to execution, we specialize in creating responsive and visually stunning websites. Elevate your online presence and leave a lasting impression on your audience."
         },
         {
             "id": 2,
-            "icon": "<i class='bx bx-tachometer'></i>",
+            "icon": "<i class='bx bxl-android'></i>",
             "link": "/",
-            "title": "City Views",
-            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+            "title": "App Development",
+            "dec": "Turn your ideas into reality with our bespoke app development services. Whether it's iOS or Android, we build user-friendly and feature-rich applications that stand out in the crowded app market."
         },
         {
             "id": 3,
-            "icon": "<i class='bx bx-world'></i>",
+            "icon": "<i class='bx bx-user'></i>",
             "link": "/",
-            "title": "Wild Life",
-            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+            "title": "CRM Development",
+            "dec": "Optimize customer relationships and streamline your business processes with our CRM development services. We create intuitive and efficient systems to help you manage and nurture client connections."
         },
         {
             "id": 4,
-            "icon": "<i class='bx bx-slideshow'></i>",
+            "icon": "<i class='bx bx-cart'></i>",
             "link": "/",
-            "title": "Wild Life",
-            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+            "title": "WooCommerce Development",
+            "dec": "Transform your online store into a powerhouse of sales with our WooCommerce development services. Our team crafts customized solutions to maximize the potential of your e-commerce platform."
         },
         {
             "id": 5,
-            "icon": "<i class='bx bx-arch'></i>",
+            "icon": "<i class='bx bx-world'></i>",
             "link": "/",
-            "title": "Wild Life",
-            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+            "title": "Social Media Advertising",
+            "dec": "Boost your brand visibility with targeted social media advertising. Our experts strategize and execute campaigns on platforms like Facebook, Google, and LinkedIn, ensuring your message reaches the potential audience."
         },
         {
             "id": 6,
-            "icon": "<i class='bx bx-file'></i>",
+            "icon": "<i class='bx bx-data'></i>",
             "link": "/",
-            "title": "Wild Life",
-            "dec": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+            "title": "Data Insights",
+            "dec": "Unlock the potential of your data with our advanced analytics and insights services. Make informed decisions and gain a competitive edge by leveraging the power of data-driven strategies."
+        },
+        {
+            "id": 7,
+            "icon": "<i class='bx bx-shield'></i>",
+            "link": "/",
+            "title": "Cybersecurity Solutions",
+            "dec": "Protect your business from digital threats with our cutting-edge cybersecurity services. We provide end-to-end security assessments and solutions to keep your data safe and secure."
+        },
+        {
+            "id": 8,
+            "icon": "<i class='bx bx-brain'></i>",
+            "link": "/",
+            "title": "AI & Machine Learning",
+            "dec": "Leverage artificial intelligence and machine learning to automate processes and gain insights. Our AI solutions help businesses innovate, grow, and stay ahead of the competition."
+        },
+        {
+            "id": 9,
+            "icon": "<i class='bx bx-cloud'></i>",
+            "link": "/",
+            "title": "Cloud Solutions",
+            "dec": "Scale your business with our cloud services. We help businesses migrate, manage, and optimize their operations on platforms like AWS, Azure, and Google Cloud."
+        },
+        {
+            "id": 10,
+            "icon": "<i class='bx bx-palette'></i>",
+            "link": "/",
+            "title": "Graphic Design",
+            "dec": "Bring your brand to life with our creative graphic design services. From logos to marketing materials, we create visually compelling designs that reflect your brand’s identity."
+        },
+        {
+            "id": 11,
+            "icon": "<i class='bx bx-layer'></i>",
+            "link": "/",
+            "title": "UI/UX Design",
+            "dec": "Enhance user experience with our intuitive UI/UX design services. We craft engaging interfaces that provide seamless navigation and drive higher user satisfaction."
+        },
+        {
+            "id": 12,
+            "icon": "<i class='bx bx-network-chart'></i>",
+            "link": "/",
+            "title": "Blockchain Development",
+            "dec": "Harness the power of blockchain technology with our development services. We build decentralized apps (DApps) and blockchain-based solutions that improve transparency and security."
+        },
+        {
+            "id": 13,
+            "icon": "<i class='bx bx-code-alt'></i>",
+            "link": "/",
+            "title": "Custom Software Development",
+            "dec": "Tailored software solutions to meet your business needs. Our team develops custom applications that enhance productivity and drive efficiency across your organization."
+        },
+        {
+            "id": 14,
+            "icon": "<i class='bx bx-laptop'></i>",
+            "link": "/",
+            "title": "IT Support & Maintenance",
+            "dec": "Ensure the stability and performance of your systems with our IT support services. We provide 24/7 monitoring and maintenance to keep your operations running smoothly."
+        },
+        {
+            "id": 15,
+            "icon": "<i class='bx bx-rocket'></i>",
+            "link": "/",
+            "title": "Digital Marketing",
+            "dec": "Amplify your reach with our digital marketing services. We create and execute strategies across SEO, PPC, content marketing, and more to drive traffic and boost conversions."
         }
     ]
 }

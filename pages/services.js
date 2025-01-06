@@ -11,7 +11,7 @@ export default function services() {
                     <Services />
                 </div>
             </section>
-            <section id="skills" className="skills">
+            {/* <section id="skills" className="skills">
                 <div className="container">
 
                     <div className="section-title">
@@ -65,7 +65,7 @@ export default function services() {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
         </main>
     )
 }
