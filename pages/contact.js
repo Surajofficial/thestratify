@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: '',
@@ -7,8 +8,6 @@ export default function Contact() {
         email: '',
         message: ''
     });
-
-    const [status, setStatus] = useState('');
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -26,10 +25,16 @@ export default function Contact() {
         });
         const data = await response.json();
         if (data.success) {
-            setStatus('Message sent successfully!');
+            toast.success('Message sent successfully!', {
+                position: "top-right",
+                autoClose: 3000,
+            });
             setFormData({ name: '', mobile: '', email: '', message: '' });
         } else {
-            setStatus('Failed to send message. Please try again.');
+            toast.error('Message Failed to sent. Please try again.', {
+                position: "top-right",
+                autoClose: 3000,
+            });
         }
     };
 
@@ -88,8 +93,6 @@ export default function Contact() {
                 </div>
                 <button type="submit" className="btn btn-primary w-100">Send Message</button>
             </form>
-
-            {status && <div className="mt-3 text-center">{status}</div>}
         </div>
     );
 }

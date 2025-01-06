@@ -1,7 +1,36 @@
-import React from 'react'
-import Link from 'next/link'
-import Script from 'next/script'
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Script from 'next/script';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function footer() {
+    const [email, setEmail] = useState('');
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch('/api/newsletter', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email }),
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            toast.success('Thank you for subscribing!', {
+                position: "top-right",
+                autoClose: 3000,
+            });
+            setEmail('');
+        } else {
+            toast.error('Failed to subscribe. Please try again.', {
+                position: "top-right",
+                autoClose: 3000,
+            });
+        }
+    };
     return (
         <>
             <footer id="footer">
@@ -13,8 +42,15 @@ export default function footer() {
                                 <p>Join 5,000+ subscribers who are growing their businesses with our tech insights.</p>
                             </div>
                             <div className="col-lg-6">
-                                <form action="" method="post">
-                                    <input type="email" name="email" />
+                                <form onSubmit={handleSubmit}>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Enter Your Email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        required
+                                    />
                                     <input type="submit" value="Subscribe" />
                                 </form>
                             </div>
@@ -80,6 +116,7 @@ export default function footer() {
                     </div>
                 </div>
             </footer >
+            <ToastContainer />
             <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
             <Script src="assets/vendor/purecounter/purecounter_vanilla.js"></Script>
             <Script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
