@@ -98,11 +98,29 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function (e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  document.addEventListener('click', function (e) {
+    const navbar = document.querySelector('#navbar');
+
+    // Toggle mobile menu when the toggle button is clicked
+    if (e.target.closest('.mobile-nav-toggle')) {
+      const toggleButton = e.target.closest('.mobile-nav-toggle');
+
+      navbar.classList.toggle('navbar-mobile');
+      toggleButton.classList.toggle('bi-list');
+      toggleButton.classList.toggle('bi-x');
+    }
+
+    // Close the mobile menu when clicking on any menu item (li)
+    if (e.target.closest('#navbar li') && navbar.classList.contains('navbar-mobile')) {
+      navbar.classList.remove('navbar-mobile');
+
+      // Reset the toggle button to the original state
+      const toggleButton = document.querySelector('.mobile-nav-toggle');
+      toggleButton.classList.add('bi-list');
+      toggleButton.classList.remove('bi-x');
+    }
+  });
+
 
   /**
    * Mobile nav dropdowns activate
