@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { motion } from "framer-motion";
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: '',
@@ -39,7 +40,13 @@ export default function Contact() {
     };
 
     return (
-        <div className="container mt-5 my-5">
+        <motion.div style={{ opacity: 0 }}
+            initial={{ opacity: 0, rotateY: 180 }}
+            animate={{ opacity: 1, rotateY: 360 }}
+            className="container mt-5 my-5"
+            transition={{
+                duration: 2
+            }}>
             <h1 className="text-center mb-4">Contact Us</h1>
             <form onSubmit={handleSubmit} className="col-md-8 offset-md-2">
                 <div className="mb-3">
@@ -93,6 +100,7 @@ export default function Contact() {
                 </div>
                 <button type="submit" className="btn btn-primary w-100">Send Message</button>
             </form>
-        </div>
+
+        </motion.div>
     );
 }
