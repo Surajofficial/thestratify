@@ -1,8 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from "next/router";
+import { motion, useSpring, useScroll } from "framer-motion";
 export default function nav() {
     const router = useRouter();
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    })
+
     return (
         <>
             <section id="topbar" className="d-flex align-items-center" >
@@ -47,6 +55,7 @@ export default function nav() {
                     </nav>
 
                 </div>
+                <motion.div className="progress_bar" style={{ scaleX }} />
             </header>
         </>
     )

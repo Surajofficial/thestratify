@@ -7,6 +7,7 @@ export default function services() {
         <motion.main style={{ opacity: 0 }}
             initial={{ opacity: 0, rotateY: 180 }}
             animate={{ opacity: 1, rotateY: 360 }}
+            
             id='main'
             transition={{
                 duration: 2
