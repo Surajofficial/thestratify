@@ -18,18 +18,18 @@ export default function nav() {
                     <div className="contact-info d-flex align-items-center">
                         <div className="d-flex contact">
                             <i className="bi bi-envelope d-flex align-items-center text-white me-1"></i>
-                            <Link href="mailto:contact@example.com">contact@stratify.com</Link>
+                            <Link href="mailto:contact@example.com">services@thestratify.com</Link>
                         </div>
                         <div className="d-flex ms-4 contact">
                             <i className="bi bi-phone d-flex align-items-center text-white me-1"></i>
-                            <Link href="tel:+917800990208" >+91-7800990208</Link>
+                            <Link href="tel:+919250733600" >+91-9250733600</Link>
                         </div>
                     </div>
                     <div className="social-links d-none d-md-flex align-items-center">
                         <Link href="https://x.com/the_stratify/" className="twitter" target='_blank'><i className="bi bi-x"></i></Link>
                         <Link href="https://www.facebook.com/share/1SdWRK44wu/" className="facebook" target='_blank'><i className="bi bi-facebook"></i></Link>
                         <Link href="https://www.instagram.com/thestratify_/profilecard/?igsh=MXV6Y3lpZXIwM2dmbA==" target='_blank' className="instagram"><i className="bi bi-instagram"></i></Link>
-                        <Link href="https://www.linkedin.com/in/stratify-stratify-95a213344/" target='_blank' className="linkedin"><i className="bi bi-linkedin"></i></Link>
+                        <Link href="https://www.linkedin.com/in/stratify-technology/" target='_blank' className="linkedin"><i className="bi bi-linkedin"></i></Link>
                     </div>
                 </div>
             </section>

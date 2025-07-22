@@ -23,22 +23,22 @@ export default function about(props) {
             >
                 <Breadcrumbs page="About Us" />
                 <About props={props.aboutData1} />
-                <section id="counts" class="counts">
-                    <div class="container">
-                        <div class="row no-gutters">
+                <section id="counts" className="counts">
+                    <div className="container">
+                        <div className="row no-gutters">
                             <Counter />
                         </div>
                     </div>
                 </section>
-                <section id="testimonials" class="testimonials">
-                    <div class="container">
+                <section id="testimonials" className="testimonials">
+                    <div className="container">
 
-                        <div class="section-title">
+                        <div className="section-title">
                             <h2>Testimonials</h2>
                             <p>We value the trust our clients place in us. Let's collaborate to turn your ideas into reality and drive success together.</p>
                         </div>
 
-                        <div class="row">
+                        <div className="row">
                             {testimonial.map((item, key) => (
 
                                 <motion.div
@@ -49,16 +49,16 @@ export default function about(props) {
                                         duration: 1
                                     }}
                                     viewport={{ root: scrollRef }}
-                                    class="col-lg-6">
-                                    <div class="testimonial-item">
+                                    className="col-lg-6">
+                                    <div className="testimonial-item">
                                         <motion.img
-                                            src={item.profile} class="testimonial-img" alt="" />
+                                            src={item.profile} className="testimonial-img" alt="" />
                                         <h3>{item.name}</h3>
                                         <h4>{item.position}</h4>
                                         <p>
-                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            <i className="bx bxs-quote-alt-left quote-icon-left"></i>
                                             {item.speech}
-                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                            <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                                         </p>
                                     </div>
                                 </motion.div>

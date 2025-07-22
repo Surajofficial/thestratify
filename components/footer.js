@@ -87,8 +87,8 @@ export default function footer() {
                             <div className="col-lg-3 col-md-6 footer-contact">
                                 <h4>Contact Us</h4>
                                 <p>
-                                    <strong>Phone:</strong> +917800990208<br />
-                                    <strong>Email:</strong> info@thestratify.com<br />
+                                    <strong>Phone:</strong> +91-9250733600<br />
+                                    <strong>Email:</strong> services@thestratify.com<br />
                                 </p>
                             </div>
 
@@ -99,7 +99,7 @@ export default function footer() {
                                     <Link href="https://x.com/the_stratify/" className="twitter" target='_blank'><i className="bi bi-x"></i></Link>
                                     <Link href="https://www.facebook.com/share/1SdWRK44wu/" className="facebook" target='_blank'><i className="bi bi-facebook"></i></Link>
                                     <Link href="https://www.instagram.com/thestratify_/profilecard/?igsh=MXV6Y3lpZXIwM2dmbA==" className="instagram" target='_blank'><i className="bi bi-instagram"></i></Link>
-                                    <Link href="https://www.linkedin.com/in/stratify-stratify-95a213344/" className="linkedin" target='_blank'><i className="bi bi-linkedin"></i></Link>
+                                    <Link href="https://www.linkedin.com/in/stratify-technology/" className="linkedin" target='_blank'><i className="bi bi-linkedin"></i></Link>
                                 </div>
                             </div>
 
@@ -112,7 +112,7 @@ export default function footer() {
                         &copy;Copyright <strong><span>Startify</span></strong>. All Rights Reserved
                     </div>
                     <div className="credits">
-                        Designed by <Link href="https://thestratify.com/" className='text-success fs-100' style={{ 'fontWeight': 900 }}>Suraj Tiwari</Link>
+                        Designed by <Link href="https://thestratify.com/" className='text-success fs-100' style={{ 'fontWeight': 900 }}>Startify Technology</Link>
                     </div>
                 </div>
             </footer >

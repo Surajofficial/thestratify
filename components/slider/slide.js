@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image'
 import items from '../../public/data/home/slider.json'
+import ModalService from "@/utils/ModalService";
 export default function CarouselFadeExample() {
     const slider = items.slider
     return (
@@ -28,7 +29,11 @@ export default function CarouselFadeExample() {
                         <Carousel.Caption>
                             <h3 className="animate__animated animate__fadeInDown">{item.title}</h3>
                             <p className="animate__animated animate__fadeInUp">{item.body}</p>
+                            <button className='btn btn-primary m-1 ' onClick={() => ModalService.open()}>
+                                {item.btn}
+                            </button>
                         </Carousel.Caption>
+
                     </Carousel.Item>
                 ))}
 

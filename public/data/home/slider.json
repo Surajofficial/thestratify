@@ -2,15 +2,17 @@
     "slider": [
         {
             "id": 1,
-            "title": "Smart Digital Solutions for Growing SMEs & MSMEs",
-            "body": "Join us as we elevate your digital journey, where debugging is just a bump in the matrix and dreams come true. 'Welcome to the innovative geek side of things!",
-            "imageUrl": "/assets/img/slide/slide.webp"
+            "title": "Grow Your Local Business with Targeted Google & Meta Ads",
+            "body": "We are one of the most trusted digital marketing companies in India, owing to our successful track record in serving our clients with innovative and specialized solutions.",
+            "imageUrl": "/assets/img/slide/slide.webp",
+            "btn": "Get a Free Ad Audit"
         },
         {
             "id": 2,
-            "title": "Our Vision",
-            "body": "We enable SMEs in making the best use of emerging digital technologies to build stronger capabilities & seize growth opportunities in today’s ever-evolving digital economy.",
-            "imageUrl": "/assets/img/slide/slide-1.jpg"
+            "title": "Full-Service Digital Agency providing growth driven solutions",
+            "body": "We specialised to craft the best digital strategies and solutions for our business partners, and share what we learn with our community",
+            "imageUrl": "/assets/img/slide/slide-1.jpg",
+            "btn": "Book a Strategy Call"
         }
     ]
 }

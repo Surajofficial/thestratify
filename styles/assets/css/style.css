@@ -2223,3 +2223,13 @@ section {
 .img-fluid {
   position: unset !important;
 }
+
+.slide,
+.carousel-inner,
+.carousel-item,
+.carousel-item img,
+#hero {
+  height: 60vh !important;
+  min-height: 500px !important;
+  display: block;
+}
