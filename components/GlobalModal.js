@@ -40,18 +40,37 @@ export default function GlobalModal() {
         };
     }, []);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const name = e.target.name.value;
-        const mobile = e.target.mobile.value;
-        const email = e.target.email.value;
-        const message = e.target.message.value;
 
-        console.log("Form submitted:", { name, mobile, email, message });
+        const formData = {
+            name: e.target.name.value,
+            mobile: e.target.mobile.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+        };
 
-        modalInstance.current?.hide();
-        e.target.reset();
+        try {
+            const res = await fetch('/api/send-modal-form', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await res.json();
+            if (data.success) {
+                alert("Form submitted successfully!");
+                ModalService.close();
+                e.target.reset();
+            } else {
+                alert("Something went wrong!");
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Error while sending form.");
+        }
     };
+
 
     return (
         <div
