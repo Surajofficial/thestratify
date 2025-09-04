@@ -409,11 +409,12 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
+  opacity: 0;
   bottom: 0;
 }
 
@@ -2229,7 +2230,54 @@ section {
 .carousel-item,
 .carousel-item img,
 #hero {
-  height: 60vh !important;
-  min-height: 500px !important;
+  /* width: 100%; */
+  /* height: 100% !important; */
   display: block;
+  object-fit: contain !important;
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel,
+#hero {
+  height: auto !important;
+  max-height: 100vh !important;
+}
+
+.carousel-caption {
+  top: 78% !important;
+  left: 20% !important;
+}
+
+#header {
+  border-bottom: 3px solid blue;
+  box-shadow: 0px 6px 18px blue !important;
+  z-index: 999999999999;
+}
+
+@media (max-width: 581px) {
+  .carousel-caption .btn {
+    font-size: 17px;
+    width: 30%;
+    padding: 2px;
+    margin: 0px;
+  }
+
+  .carousel-caption {
+    top: 70% !important;
+    left: 20% !important;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-caption .btn {
+    font-size: 10px;
+    width: 35%;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .carousel-caption {
+    top: 50% !important;
+    left: 2% !important;
+  }
 }

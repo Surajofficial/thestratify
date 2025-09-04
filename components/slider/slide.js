@@ -17,18 +17,37 @@ export default function CarouselFadeExample() {
 
                 {slider.map((item, key) => (
                     <Carousel.Item key={key}>
-                        <Image
-                            className="d-block w-100"
-                            src={item.imageUrl}
-                            alt={item.imageUrl}
-                            fill
-                            loading='eager'
-                            quality={50}
-                            sizes="100"
-                        />
+                        <picture>
+                            {/* Ultra Wide (≥2560px) */}
+                            <source srcSet={item.images.uw} media="(min-width: 2560px)" />
+
+                            {/* Extra Large (1367 – 1920px) */}
+                            <source srcSet={item.images.xl} media="(min-width: 1367px)" />
+
+                            {/* Large (1025 – 1366px) */}
+                            <source srcSet={item.images.lg} media="(min-width: 1025px)" />
+
+                            {/* Medium (769 – 1024px) */}
+                            <source srcSet={item.images.md} media="(min-width: 769px)" />
+
+                            {/* Small (481 – 768px) */}
+                            <source srcSet={item.images.sm} media="(min-width: 481px)" />
+
+                            {/* Extra Small (≤480px) */}
+                            <source srcSet={item.images.xs} media="(max-width: 480px)" />
+
+                            {/* Default / fallback */}
+                            <Image
+                                src={item.images.xl} // default desktop image
+                                alt="Responsive Banner"
+                                fill
+                                priority
+                                quality={80}
+                                sizes="100vw"
+                                style={{ objectFit: "cover" }}
+                            />
+                        </picture>
                         <Carousel.Caption>
-                            <h3 className="animate__animated animate__fadeInDown">{item.title}</h3>
-                            <p className="animate__animated animate__fadeInUp">{item.body}</p>
                             <button className='btn btn-primary m-1 ' onClick={() => ModalService.open()}>
                                 {item.btn}
                             </button>

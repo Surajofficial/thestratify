@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Slide from '../components/slider/slide'
 import HomeCard from '../components/home/homeCard'
-import HomeAbout from '../components/home/homeAbout'
+
 import HomeServices from '../components/home/homeservices'
 import HomeClient from '../components/home/homeClients'
 import { motion } from "framer-motion";
@@ -32,12 +32,39 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <HomeAbout />
+        {/* <HomeAbout /> */}
         <section id="services" className="services">
           <div className="container">
+            <h6 className='servicesHeading'>Why Businesses Trust Stratify Technology</h6>
             <HomeServices />
           </div>
         </section>
+        <section  className="services">
+          <div className="services__container">
+            <p className="services__eyebrow">Our Expertise</p>
+            <h2 className="services__title">Why Choose Us</h2>
+
+            <ul className="services__list">
+              <li className="services__item">
+                <i className="bx bx-line-chart services__icon"></i>
+                <span className="services__text">Proven Expertise in Development & Marketing</span>
+              </li>
+              <li className="services__item">
+                <i className="bx bx-git-branch services__icon"></i>
+                <span className="services__text">Customized Solutions for Every Business</span>
+              </li>
+              <li className="services__item">
+                <i className="bx bx-bar-chart-alt-2 services__icon"></i>
+                <span className="services__text">Transparent & Result-Oriented Strategies</span>
+              </li>
+              <li className="services__item">
+                <i className="bx bx-trending-up services__icon"></i>
+                <span className="services__text">Dedicated Support & Growth Partner</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <HomeClient />
       </main>
     </motion.div>

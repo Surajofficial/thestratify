@@ -37,10 +37,10 @@
         },
         {
             "id": 6,
-            "icon": "<i class='bx bx-data'></i>",
+            "icon": "<i class='bx bx-search-alt-2'></i>",
             "link": "/",
-            "title": "Data Insights",
-            "dec": " Unlock the potential of your data with our advanced analytics and insights services. Make informed decisions and gain a competitive edge by leveraging the power of data-driven strategies."
+            "title": "Rank on Google (SEO Boost)",
+            "dec": "Increase your visibility on Google with our proven SEO strategies. From keyword research to on-page SEO, backlinks, and local SEO, we help your business rank higher, attract organic traffic, and convert more leads."
         }
     ]
 }

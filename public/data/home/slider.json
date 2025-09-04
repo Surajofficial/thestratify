@@ -2,17 +2,31 @@
     "slider": [
         {
             "id": 1,
-            "title": "Grow Your Local Business with Targeted Google & Meta Ads",
-            "body": "We are one of the most trusted digital marketing companies in India, owing to our successful track record in serving our clients with innovative and specialized solutions.",
-            "imageUrl": "/assets/img/slide/slide.webp",
-            "btn": "Get a Free Ad Audit"
+            "title": "",
+            "body": "",
+            "btn": "Get a Free Ad Audit",
+            "images": {
+                "xs": "/assets/img/slide/slide-2-480.webp",
+                "sm": "/assets/img/slide/slide-2-768.webp",
+                "md": "/assets/img/slide/slide-2-1024.webp",
+                "lg": "/assets/img/slide/slide-2-1366.webp",
+                "xl": "/assets/img/slide/slide-2-1920.webp",
+                "uw": "/assets/img/slide/slide-2-2560.webp"
+            }
         },
         {
             "id": 2,
-            "title": "Full-Service Digital Agency providing growth driven solutions",
-            "body": "We specialised to craft the best digital strategies and solutions for our business partners, and share what we learn with our community",
-            "imageUrl": "/assets/img/slide/slide-1.jpg",
-            "btn": "Book a Strategy Call"
+            "title": "",
+            "body": "",
+            "btn": "Book a Strategy Call",
+            "images": {
+                "xs": "/assets/img/slide/slide-2-480.webp",
+                "sm": "/assets/img/slide/slide-2-768.webp",
+                "md": "/assets/img/slide/slide-2-1024.webp",
+                "lg": "/assets/img/slide/slide-2-1366.webp",
+                "xl": "/assets/img/slide/slide-2-1920.webp",
+                "uw": "/assets/img/slide/slide-2-2560.webp"
+            }
         }
     ]
 }

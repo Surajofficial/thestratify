@@ -5,6 +5,7 @@ import '@/styles/assets/vendor/bootstrap-icons/bootstrap-icons.css'
 import '@/styles/assets/vendor/boxicons/css/boxicons.min.css'
 import '@/styles/assets/vendor/glightbox/css/glightbox.min.css'
 import '@/styles/assets/css/style.css'
+import '@/styles/assets/css/ourexperties.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import Swiper styles
