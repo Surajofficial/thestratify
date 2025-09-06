@@ -20,12 +20,12 @@
             "body": "",
             "btn": "Book a Strategy Call",
             "images": {
-                "xs": "/assets/img/slide/banner1/1.png",
-                "sm": "/assets/img/slide/banner1/2.png",
-                "md": "/assets/img/slide/banner1/3.png",
-                "lg": "/assets/img/slide/banner1/4.png",
-                "xl": "/assets/img/slide/banner1/5.png",
-                "uw": "/assets/img/slide/banner1/6.png"
+                "xs": "/assets/img/slide/banner1/13.png",
+                "sm": "/assets/img/slide/banner1/14.png",
+                "md": "/assets/img/slide/banner1/15.png",
+                "lg": "/assets/img/slide/banner1/16.png",
+                "xl": "/assets/img/slide/banner1/17.png",
+                "uw": "/assets/img/slide/banner1/18.png"
             }
         },
         {
@@ -34,12 +34,12 @@
             "body": "",
             "btn": "Book a Strategy Call",
             "images": {
-                "xs": "/assets/img/slide/banner1/1.png",
-                "sm": "/assets/img/slide/banner1/2.png",
-                "md": "/assets/img/slide/banner1/3.png",
-                "lg": "/assets/img/slide/banner1/4.png",
-                "xl": "/assets/img/slide/banner1/5.png",
-                "uw": "/assets/img/slide/banner1/6.png"
+                "xs": "/assets/img/slide/banner1/7.webp",
+                "sm": "/assets/img/slide/banner1/8.webp",
+                "md": "/assets/img/slide/banner1/9.webp",
+                "lg": "/assets/img/slide/banner1/10.webp",
+                "xl": "/assets/img/slide/banner1/11.webp",
+                "uw": "/assets/img/slide/banner1/12.webp"
             }
         }
     ]
