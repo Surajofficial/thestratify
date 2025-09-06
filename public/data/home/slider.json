@@ -6,12 +6,12 @@
             "body": "",
             "btn": "Get a Free Ad Audit",
             "images": {
-                "xs": "/assets/img/slide/slide-2-480.webp",
-                "sm": "/assets/img/slide/slide-2-768.webp",
-                "md": "/assets/img/slide/slide-2-1024.webp",
-                "lg": "/assets/img/slide/slide-2-1366.webp",
-                "xl": "/assets/img/slide/slide-2-1920.webp",
-                "uw": "/assets/img/slide/slide-2-2560.webp"
+                "xs": "/assets/img/slide/banner1/1.png",
+                "sm": "/assets/img/slide/banner1/2.png",
+                "md": "/assets/img/slide/banner1/3.png",
+                "lg": "/assets/img/slide/banner1/4.png",
+                "xl": "/assets/img/slide/banner1/5.png",
+                "uw": "/assets/img/slide/banner1/6.png"
             }
         },
         {
@@ -20,12 +20,26 @@
             "body": "",
             "btn": "Book a Strategy Call",
             "images": {
-                "xs": "/assets/img/slide/slide-2-480.webp",
-                "sm": "/assets/img/slide/slide-2-768.webp",
-                "md": "/assets/img/slide/slide-2-1024.webp",
-                "lg": "/assets/img/slide/slide-2-1366.webp",
-                "xl": "/assets/img/slide/slide-2-1920.webp",
-                "uw": "/assets/img/slide/slide-2-2560.webp"
+                "xs": "/assets/img/slide/banner1/1.png",
+                "sm": "/assets/img/slide/banner1/2.png",
+                "md": "/assets/img/slide/banner1/3.png",
+                "lg": "/assets/img/slide/banner1/4.png",
+                "xl": "/assets/img/slide/banner1/5.png",
+                "uw": "/assets/img/slide/banner1/6.png"
+            }
+        },
+        {
+            "id": 3,
+            "title": "",
+            "body": "",
+            "btn": "Book a Strategy Call",
+            "images": {
+                "xs": "/assets/img/slide/banner1/1.png",
+                "sm": "/assets/img/slide/banner1/2.png",
+                "md": "/assets/img/slide/banner1/3.png",
+                "lg": "/assets/img/slide/banner1/4.png",
+                "xl": "/assets/img/slide/banner1/5.png",
+                "uw": "/assets/img/slide/banner1/6.png"
             }
         }
     ]

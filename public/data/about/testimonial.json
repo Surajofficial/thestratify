@@ -2,45 +2,31 @@
     "testimonial": [
         {
             "id": 1,
-            "name": "John D.",
-            "profile": "assets/img/testimonials/client1.webp",
-            "position": "CEO at NextTech Solutions",
-            "speech": "Working with Stratify was a game-changer for our business. Their development team understood our vision and transformed it into a sleek, high-performing website. Their professionalism and attention to detail set them apart."
+            "name": "Mithlesh Singh",
+            "profile": "assets/img/testimonials/mithlessir.webp",
+            "position": "CEO at Multitech Institute",
+            "speech": "Stratify Technology completely transformed my online presence. Their team built a fast, professional website for my business and helped me get found on Google. I started receiving genuine leads within weeks. Highly recommended"
         },
         {
             "id": 2,
-            "name": "Sarah M.",
-            "profile": "assets/img/testimonials/client2.webp",
-            "position": "Marketing Director at Visionary Designs",
-            "speech": "Stratify helped us rebrand our website, and the results were phenomenal. Our engagement rates skyrocketed by 45%. The team is talented, responsive, and always ready to go the extra mile."
+            "name": "Rajkumar Tiwari",
+            "profile": "assets/img/testimonials/rajkumarsir.webp",
+            "position": "CEO at Multitech Institute",
+            "speech": "I trusted Stratify Technology with social media marketing and ads for my business. The results were excellent – better engagement, more inquiries, and a professional brand image. The team is very supportive and easy to work with."
         },
         {
             "id": 3,
-            "name": "Michael R.",
+            "name": "Trishu Singh",
             "profile": "assets/img/testimonials/client3.webp",
-            "position": "Founder of BrightPath Innovations",
-            "speech": "From concept to deployment, Stratify exceeded our expectations. Their custom software solution streamlined our workflow, improving efficiency across the board. I highly recommend them!"
+            "position": "Founder of Deizitized Media",
+            "speech": "The Stratify team did a fantastic job in designing my website and managing my digital campaigns. They explained everything clearly, delivered on time, and focused on results. A reliable partner for digital growth."
         },
         {
             "id": 4,
-            "name": "Laura B",
-            "profile": "assets/img/testimonials/client4.webp",
-            "position": "COO at CreativePixel Studio",
-            "speech": "Stratify's graphic design expertise brought our brand to life. The new website and marketing materials they developed helped us attract new clients and stand out in a competitive market."
-        },
-        {
-            "id": 5,
-            "name": "James K.",
-            "profile": "assets/img/testimonials/client5.webp",
-            "position": "IT Manager at Horizon Systems",
-            "speech": "Their technical expertise and dedication to quality are unmatched. Stratify developed our e-commerce platform seamlessly, delivering it on time and within budget. A great experience!"
-        },
-        {
-            "id": 6,
-            "name": "Emma C.",
-            "profile": "assets/img/testimonials/client6.webp",
-            "position": "Product Manager at SkyBridge Networks",
-            "speech": "Stratify's team made our mobile app project a success. They were proactive, communicative, and highly skilled in app development. The final product exceeded our expectations."
+            "name": "Kapil Kumar",
+            "profile": "assets/img/testimonials/kapil.webp",
+            "position": "Founder of Uniq Digital Media",
+            "speech": "We wanted to grow our e-commerce sales, and Stratify Technology provided the right mix of website optimization and ad campaigns. Our sales have increased, and we now have a clear digital strategy. Thank you for the great work!"
         }
     ]
 }

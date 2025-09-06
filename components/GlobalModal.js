@@ -85,9 +85,13 @@ export default function GlobalModal() {
                 <div className="modal-content border-0 shadow-lg rounded-4">
                     <form onSubmit={handleSubmit}>
                         <div className="modal-header bg-primary text-white rounded-top-4 px-4">
-                            <h5 className="modal-title fw-semibold" id="globalModalLabel">
-                                💬 Let's Talk
+                            <h5 className="modal-title fw-semibold d-flex align-items-center gap-2" id="globalModalLabel">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 0 0-6.61 12.84c-.2.44-.72 1.48-1.36 2.6a.25.25 0 0 0 .33.34c1.13-.64 2.17-1.16 2.61-1.36A8 8 0 1 0 8 0zm-3.5 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3.5 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3.5 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                </svg>
+                                Get Free Consultation
                             </h5>
+
                             <button
                                 type="button"
                                 className="btn-close btn-close-white"
