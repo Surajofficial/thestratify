@@ -39,7 +39,7 @@ export default function Home() {
             <HomeServices />
           </div>
         </section>
-        <section  className="services">
+        <section className="services">
           <div className="services__container">
             <p className="services__eyebrow">Our Expertise</p>
             <h2 className="services__title">Why Choose Us</h2>

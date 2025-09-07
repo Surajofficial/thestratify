@@ -48,7 +48,7 @@ export default function CarouselFadeExample() {
                             />
                         </picture>
                         <Carousel.Caption>
-                            <button className='btn btn-primary m-1 ' onClick={() => ModalService.open()}>
+                            <button className='btn btn-primary m-1 text-center' onClick={() => ModalService.open()}>
                                 {item.btn}
                             </button>
                         </Carousel.Caption>

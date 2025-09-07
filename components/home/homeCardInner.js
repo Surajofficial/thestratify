@@ -6,7 +6,7 @@ export default function homeCardInner(props) {
     return (
         <>
             {parse(props.icon)}
-            <h4><Link href={props.link}>{props.title}</Link></h4>
+            <h4><Link href={props.link}>{parse(props.title)}</Link></h4>
             <p>{props.dec}</p>
         </>
     )

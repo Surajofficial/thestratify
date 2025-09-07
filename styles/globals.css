@@ -152,6 +152,15 @@ a {
   color: white !important;
 }
 
-#services h4 a{
+#services h4 a {
   color: white !important;
+}
+
+#globalModal {
+  z-index: 99999999999999;
+}
+
+.carousel-caption {
+  top: 44% !important;
+  left: 8% !important;
 }
