@@ -87,7 +87,7 @@ export default function footer() {
                             <div className="col-lg-3 col-md-6 footer-contact">
                                 <h4>Contact Us</h4>
                                 <p>
-                                    <strong>Phone:</strong> +91-9250733600<br />
+                                    <strong>Phone:</strong> +91-7800990208<br />
                                     <strong>Email:</strong> services@thestratify.com<br />
                                 </p>
                             </div>

@@ -22,7 +22,7 @@ export default function nav() {
                         </div>
                         <div className="d-flex ms-4 contact">
                             <i className="bi bi-phone d-flex align-items-center text-white me-1"></i>
-                            <Link href="tel:+919250733600" >+91-9250733600</Link>
+                            <Link href="tel:+917800990208" >+91-7800990208</Link>
                         </div>
                     </div>
                     <div className="social-links d-none d-md-flex align-items-center">

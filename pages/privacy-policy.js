@@ -123,6 +123,7 @@ export default function PrivacyPolicy() {
                             <div className="accordion-body">
                                 <address>
                                     <strong>{brand}</strong><br />
+                                    Mobile:+91-7800990208<br />
                                     Email: <a href={`mailto:support@thestratify.com`}>support@thestratify.com</a>
                                 </address>
                             </div>
