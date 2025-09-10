@@ -1,8 +1,6 @@
 export default function PrivacyPolicy() {
     const company = "Stratify Technology";
     const brand = company;
-    const email = "privacy@stratify.tech";
-    const address = "2nd Floor, Plot 21, Tech Park Road, Bengaluru, KA 560001, India";
     const updated = "10 Sep 2025";
 
     return (
@@ -125,8 +123,7 @@ export default function PrivacyPolicy() {
                             <div className="accordion-body">
                                 <address>
                                     <strong>{brand}</strong><br />
-                                    {address}<br />
-                                    Email: <a href={`mailto:${email}`}>{email}</a>
+                                    Email: <a href={`mailto:support@thestratify.com`}>support@thestratify.com</a>
                                 </address>
                             </div>
                         </div>
