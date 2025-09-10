@@ -50,6 +50,7 @@ export default function nav() {
                             {/* <li><Link className={router.pathname == "/pricing" ? "active" : ""} href="pricing">Pricing</Link></li> */}
                             {/* <li><Link className={router.pathname == "/blog" ? "active" : ""} href="blog">Blog</Link></li> */}
                             <li><Link className={router.pathname == "/contact" ? "active" : ""} href="contact">Contact</Link></li>
+                            <li><Link className={router.pathname == "/privacy-policy" ? "active" : ""} href="privacy-policy">Privacy Policy</Link></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
                     </nav>
