@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
@@ -65,8 +66,79 @@ export default function BlogDetail() {
     }
 
     return (
-        <main id="main">
-            <div className="container mt-5">
+        <>
+            <Head>
+                <title>{blog.metaTitle || `${blog.title} - Stratify Technology`}</title>
+                <meta name="description" content={blog.metaDescription || blog.excerpt || `Read ${blog.title} on Stratify Technology blog. Expert insights on web development, technology trends, and business strategies.`} />
+                <meta name="keywords" content={blog.keywords || `${blog.tags?.join(', ')}, stratify technology, web development, technology blog, ${blog.title.toLowerCase()}`} />
+                <meta name="author" content={blog.author} />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={blog.metaTitle || `${blog.title} - Stratify Technology`} />
+                <meta property="og:description" content={blog.metaDescription || blog.excerpt || `Read ${blog.title} on Stratify Technology blog. Expert insights on web development and technology trends.`} />
+                <meta property="og:image" content={blog.featuredImage || 'https://thestratify.com/assets/img/website and app development services company.jpg'} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:url" content={`https://thestratify.com/blog/${blog.slug}`} />
+                <meta property="og:site_name" content="Stratify Technology" />
+                
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={blog.metaTitle || `${blog.title} - Stratify Technology`} />
+                <meta name="twitter:description" content={blog.metaDescription || blog.excerpt || `Read ${blog.title} on Stratify Technology blog.`} />
+                <meta name="twitter:image" content={blog.featuredImage || 'https://thestratify.com/assets/img/website and app development services company.jpg'} />
+                
+                {/* Additional SEO */}
+                <meta name="robots" content="index, follow" />
+                <meta name="googlebot" content="index, follow" />
+                <link rel="canonical" href={`https://thestratify.com/blog/${blog.slug}`} />
+                
+                {/* Article specific */}
+                <meta property="article:published_time" content={blog.publishedAt} />
+                <meta property="article:modified_time" content={blog.updatedAt} />
+                <meta property="article:author" content={blog.author} />
+                <meta property="article:section" content="Technology" />
+                {blog.tags && blog.tags.map((tag, index) => (
+                    <meta key={index} property="article:tag" content={tag} />
+                ))}
+                
+                {/* Structured Data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BlogPosting",
+                        "headline": blog.title,
+                        "description": blog.metaDescription || blog.excerpt,
+                        "image": blog.featuredImage || 'https://thestratify.com/assets/img/website and app development services company.jpg',
+                        "author": {
+                            "@type": "Person",
+                            "name": blog.author
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Stratify Technology",
+                            "url": "https://thestratify.com",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://thestratify.com/assets/img/favicon.png"
+                            }
+                        },
+                        "datePublished": blog.publishedAt,
+                        "dateModified": blog.updatedAt,
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://thestratify.com/blog/${blog.slug}`
+                        },
+                        "keywords": blog.keywords || blog.tags?.join(', '),
+                        "articleSection": "Technology",
+                        "wordCount": blog.content ? blog.content.split(' ').length : 0
+                    })}
+                </script>
+            </Head>
+            <main id="main">
+                <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-8">
                         <article className="blog-post">
@@ -168,6 +240,7 @@ export default function BlogDetail() {
                     </div>
                 </div>
             </div>
-        </main>
+            </main>
+        </>
     );
 }

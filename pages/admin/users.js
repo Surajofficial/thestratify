@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Link from 'next/link';
+import NewAdminLayout from '../../components/admin/NewAdminLayout';
 
 export default function UserManagement() {
     const [users, setUsers] = useState([]);
@@ -94,17 +95,19 @@ export default function UserManagement() {
     }
 
     return (
-        <div className="container mt-5">
+        <NewAdminLayout>
             <div className="d-flex justify-content-between align-items-center mb-4">
-                <h1>User Management</h1>
+                <h1 className="mb-0">User Management</h1>
                 <div>
                     <button 
                         onClick={() => setShowAddForm(!showAddForm)}
-                        className="btn btn-primary me-2"
+                        className="btn btn-admin-primary me-2"
                     >
+                        <i className="bi bi-person-plus me-1"></i>
                         {showAddForm ? 'Cancel' : 'Add New User'}
                     </button>
-                    <Link href="/admin/dashboard" className="btn btn-outline-secondary">
+                    <Link href="/admin/dashboard" className="btn btn-admin-secondary">
+                        <i className="bi bi-arrow-left me-1"></i>
                         Back to Dashboard
                     </Link>
                 </div>
@@ -241,6 +244,6 @@ export default function UserManagement() {
                     )}
                 </div>
             </div>
-        </div>
+        </NewAdminLayout>
     );
 }

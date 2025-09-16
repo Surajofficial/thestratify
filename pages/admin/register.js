@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Link from 'next/link';
+import AdminLoginLayout from '../../components/admin/AdminLoginLayout';
 
 export default function AdminRegister() {
     const [formData, setFormData] = useState({
@@ -61,77 +62,70 @@ export default function AdminRegister() {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card admin-card">
-                        <div className="card-header">
-                            <h3 className="text-center">Create New User</h3>
+        <AdminLoginLayout>
+            <div className="admin-login-page">
+                <div className="login-container">
+                    <div className="login-card">
+                        <div className="login-header">
+                            <div className="logo">
+                                <h2>Create User</h2>
+                                <p>Admin Registration</p>
+                            </div>
                         </div>
-                        <div className="card-body">
+                        <div className="login-body">
                             <form onSubmit={handleSubmit} className="admin-form">
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="mb-3">
-                                            <label htmlFor="username" className="form-label">Username *</label>
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                id="username"
-                                                value={formData.username}
-                                                onChange={(e) => setFormData({...formData, username: e.target.value})}
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="mb-3">
-                                            <label htmlFor="email" className="form-label">Email</label>
-                                            <input
-                                                type="email"
-                                                className="form-control"
-                                                id="email"
-                                                value={formData.email}
-                                                onChange={(e) => setFormData({...formData, email: e.target.value})}
-                                            />
-                                        </div>
-                                    </div>
+                                <div className="mb-3">
+                                    <label htmlFor="username" className="form-label">Username *</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="username"
+                                        value={formData.username}
+                                        onChange={(e) => setFormData({...formData, username: e.target.value})}
+                                        required
+                                    />
+                                </div>
+                                
+                                <div className="mb-3">
+                                    <label htmlFor="email" className="form-label">Email</label>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        id="email"
+                                        value={formData.email}
+                                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                                    />
                                 </div>
 
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="mb-3">
-                                            <label htmlFor="password" className="form-label">Password *</label>
-                                            <input
-                                                type="password"
-                                                className="form-control"
-                                                id="password"
-                                                value={formData.password}
-                                                onChange={(e) => setFormData({...formData, password: e.target.value})}
-                                                required
-                                                minLength="6"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="mb-3">
-                                            <label htmlFor="confirmPassword" className="form-label">Confirm Password *</label>
-                                            <input
-                                                type="password"
-                                                className="form-control"
-                                                id="confirmPassword"
-                                                value={formData.confirmPassword}
-                                                onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}
-                                                required
-                                            />
-                                        </div>
-                                    </div>
+                                <div className="mb-3">
+                                    <label htmlFor="password" className="form-label">Password *</label>
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        id="password"
+                                        value={formData.password}
+                                        onChange={(e) => setFormData({...formData, password: e.target.value})}
+                                        required
+                                        minLength="6"
+                                    />
+                                </div>
+                                
+                                <div className="mb-3">
+                                    <label htmlFor="confirmPassword" className="form-label">Confirm Password *</label>
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        id="confirmPassword"
+                                        value={formData.confirmPassword}
+                                        onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}
+                                        required
+                                    />
                                 </div>
 
                                 <div className="mb-3">
                                     <label htmlFor="role" className="form-label">Role</label>
                                     <select
-                                        className="form-select"
+                                        className="form-control"
                                         id="role"
                                         value={formData.role}
                                         onChange={(e) => setFormData({...formData, role: e.target.value})}
@@ -154,10 +148,14 @@ export default function AdminRegister() {
                                 )}
 
                                 <div className="d-flex gap-2">
-                                    <button type="submit" className="btn btn-primary" disabled={loading}>
+                                    <button type="submit" className="btn btn-admin-primary w-100" disabled={loading}>
+                                        <i className="bi bi-check-circle me-1"></i>
                                         {loading ? 'Creating...' : 'Create User'}
                                     </button>
-                                    <Link href="/admin/login" className="btn btn-secondary">
+                                </div>
+                                <div className="text-center mt-3">
+                                    <Link href="/admin/login" className="btn btn-link">
+                                        <i className="bi bi-arrow-left me-1"></i>
                                         Back to Login
                                     </Link>
                                 </div>
@@ -166,6 +164,6 @@ export default function AdminRegister() {
                     </div>
                 </div>
             </div>
-        </div>
+        </AdminLoginLayout>
     );
 }

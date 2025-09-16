@@ -4,6 +4,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import ImageUpload from '../../../components/ImageUpload';
 import RichTextEditor from '../../../components/RichTextEditor';
+import NewAdminLayout from '../../../components/admin/NewAdminLayout';
 
 export default function NewBlog() {
     const [formData, setFormData] = useState({
@@ -14,7 +15,10 @@ export default function NewBlog() {
         featuredImage: '',
         author: 'Stratify Team',
         status: 'draft',
-        tags: ''
+        tags: '',
+        metaTitle: '',
+        metaDescription: '',
+        keywords: ''
     });
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
@@ -43,7 +47,8 @@ export default function NewBlog() {
         setFormData({
             ...formData,
             title,
-            slug: generateSlug(title)
+            slug: generateSlug(title),
+            metaTitle: title ? `${title} - Stratify Technology` : ''
         });
     };
 
@@ -74,10 +79,11 @@ export default function NewBlog() {
     };
 
     return (
-        <div className="container mt-5">
+        <NewAdminLayout>
             <div className="d-flex justify-content-between align-items-center mb-4">
-                <h1>Create New Blog</h1>
-                <Link href="/admin/dashboard" className="btn btn-outline-secondary">
+                <h1 className="mb-0">Create New Blog</h1>
+                <Link href="/admin/dashboard" className="btn btn-admin-secondary">
+                    <i className="bi bi-arrow-left me-1"></i>
                     Back to Dashboard
                 </Link>
             </div>
@@ -177,6 +183,47 @@ export default function NewBlog() {
                                     />
                                     <div className="form-text">Separate tags with commas</div>
                                 </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="metaTitle" className="form-label">SEO Title</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="metaTitle"
+                                        value={formData.metaTitle}
+                                        onChange={(e) => setFormData({...formData, metaTitle: e.target.value})}
+                                        placeholder="SEO optimized title for search engines"
+                                        maxLength="60"
+                                    />
+                                    <div className="form-text">Recommended: 50-60 characters</div>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="metaDescription" className="form-label">Meta Description</label>
+                                    <textarea
+                                        className="form-control"
+                                        id="metaDescription"
+                                        rows="3"
+                                        value={formData.metaDescription}
+                                        onChange={(e) => setFormData({...formData, metaDescription: e.target.value})}
+                                        placeholder="Brief description for search engines"
+                                        maxLength="160"
+                                    />
+                                    <div className="form-text">Recommended: 150-160 characters</div>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="keywords" className="form-label">Keywords</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="keywords"
+                                        value={formData.keywords}
+                                        onChange={(e) => setFormData({...formData, keywords: e.target.value})}
+                                        placeholder="seo, keywords, search, terms"
+                                    />
+                                    <div className="form-text">Separate keywords with commas</div>
+                                </div>
                             </div>
                         </div>
 
@@ -187,16 +234,18 @@ export default function NewBlog() {
                         )}
 
                         <div className="d-flex gap-2">
-                            <button type="submit" className="btn btn-primary" disabled={loading}>
+                            <button type="submit" className="btn btn-admin-primary" disabled={loading}>
+                                <i className="bi bi-check-circle me-1"></i>
                                 {loading ? 'Creating...' : 'Create Blog'}
                             </button>
-                            <Link href="/admin/dashboard" className="btn btn-secondary">
+                            <Link href="/admin/dashboard" className="btn btn-admin-secondary">
+                                <i className="bi bi-x-circle me-1"></i>
                                 Cancel
                             </Link>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
+        </NewAdminLayout>
     );
 }

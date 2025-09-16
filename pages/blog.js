@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
@@ -58,8 +59,62 @@ export default function Blog() {
     }
 
     return (
-        <main id="main">
-            <div className="container mt-5">
+        <>
+            <Head>
+                <title>Blog - Stratify Technology | Web Development & Technology Insights</title>
+                <meta name="description" content="Read the latest insights on web development, technology trends, and business strategies from Stratify Technology. Expert articles on modern web solutions, React, Next.js, and digital marketing." />
+                <meta name="keywords" content="web development blog, technology insights, business strategies, web solutions, stratify technology, react development, nextjs tutorials, digital marketing, SEO tips, web design, programming, software development, tech news, coding tutorials, frontend development, backend development, full stack development, javascript, html, css, responsive design, mobile development, e-commerce solutions, web applications, software consulting, technology trends, digital transformation, cloud computing, database management, API development, web performance, user experience, UI/UX design" />
+                <meta name="author" content="Stratify Technology" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Blog - Stratify Technology | Web Development & Technology Insights" />
+                <meta property="og:description" content="Read the latest insights on web development, technology trends, and business strategies from Stratify Technology. Expert articles on modern web solutions." />
+                <meta property="og:url" content="https://thestratify.com/blog" />
+                <meta property="og:site_name" content="Stratify Technology" />
+                <meta property="og:image" content="https://thestratify.com/assets/img/website and app development services company.jpg" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Blog - Stratify Technology | Web Development & Technology Insights" />
+                <meta name="twitter:description" content="Read the latest insights on web development, technology trends, and business strategies from Stratify Technology." />
+                <meta name="twitter:image" content="https://thestratify.com/assets/img/website and app development services company.jpg" />
+                
+                {/* Additional SEO */}
+                <meta name="robots" content="index, follow" />
+                <meta name="googlebot" content="index, follow" />
+                <link rel="canonical" href="https://thestratify.com/blog" />
+                <link rel="alternate" type="application/rss+xml" title="Stratify Technology Blog RSS Feed" href="https://thestratify.com/blog/rss.xml" />
+                
+                {/* Structured Data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Blog",
+                        "name": "Stratify Technology Blog",
+                        "description": "Read the latest insights on web development, technology trends, and business strategies from Stratify Technology.",
+                        "url": "https://thestratify.com/blog",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Stratify Technology",
+                            "url": "https://thestratify.com",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://thestratify.com/assets/img/favicon.png"
+                            }
+                        },
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://thestratify.com/blog"
+                        }
+                    })}
+                </script>
+            </Head>
+            <main id="main">
+                <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="mb-4">
@@ -158,6 +213,7 @@ export default function Blog() {
                     </div>
                 </div>
             </div>
-        </main>
+            </main>
+        </>
     );
 }

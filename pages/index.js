@@ -15,11 +15,57 @@ export default function Home() {
         duration: 2
       }}>
       <Head>
-        <title>Smart Digital Solutions for Growing SMEs & MSMEs</title>
-        < meta name="description"
-          content='Join us as we elevate your digital journey, where debugging is just a bump in the matrix and dreams come true. "Welcome to the innovative geek side of things!' />
+        <title>Stratify Technology - Smart Digital Solutions for Growing SMEs & MSMEs</title>
+        <meta name="description" content="Join us as we elevate your digital journey, where debugging is just a bump in the matrix and dreams come true. Welcome to the innovative geek side of things! Expert web development, mobile apps, and digital solutions." />
+        <meta name="keywords" content="web development, mobile app development, digital solutions, SME solutions, MSME solutions, stratify technology, software development, website design, e-commerce development, react development, nextjs development, nodejs development, full stack development, digital transformation, business automation, cloud solutions, database management, API development, responsive design, UI/UX design, technology consulting, software consulting, digital marketing, SEO services, business growth, startup solutions, enterprise solutions, custom software, web applications, mobile applications, technology trends, programming, coding, development services" />
+        <meta name="author" content="Stratify Technology" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Stratify Technology - Smart Digital Solutions for Growing SMEs & MSMEs" />
+        <meta property="og:description" content="Join us as we elevate your digital journey with expert web development, mobile apps, and digital solutions. Welcome to the innovative geek side of things!" />
+        <meta property="og:url" content="https://thestratify.com" />
+        <meta property="og:site_name" content="Stratify Technology" />
+        <meta property="og:image" content="https://thestratify.com/assets/img/website and app development services company.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Stratify Technology - Smart Digital Solutions for Growing SMEs & MSMEs" />
+        <meta name="twitter:description" content="Join us as we elevate your digital journey with expert web development, mobile apps, and digital solutions." />
+        <meta name="twitter:image" content="https://thestratify.com/assets/img/website and app development services company.jpg" />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://thestratify.com" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Stratify Technology",
+            "url": "https://thestratify.com",
+            "logo": "https://thestratify.com/assets/img/favicon.png",
+            "description": "Smart Digital Solutions for Growing SMEs & MSMEs. Expert web development, mobile apps, and digital solutions.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "url": "https://thestratify.com/contact"
+            },
+            "sameAs": [
+              "https://thestratify.com/blog"
+            ]
+          })}
+        </script>
       </Head>
       <section id="hero">
         <Slide />

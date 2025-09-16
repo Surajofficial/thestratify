@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import axios from 'axios';
+import AdminLoginLayout from '../../components/admin/AdminLoginLayout';
 
 export default function AdminLogin() {
     const [credentials, setCredentials] = useState({ username: '', password: '' });
@@ -28,14 +29,17 @@ export default function AdminLogin() {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="row justify-content-center">
-                <div className="col-md-6">
-                    <div className="card admin-card">
-                        <div className="card-header">
-                            <h3 className="text-center">Admin Login</h3>
+        <AdminLoginLayout>
+            <div className="admin-login-page">
+                <div className="login-container">
+                    <div className="login-card">
+                        <div className="login-header">
+                            <div className="logo">
+                                <h2>Stratify</h2>
+                                <p>Admin Panel</p>
+                            </div>
                         </div>
-                        <div className="card-body">
+                        <div className="login-body">
                             <form onSubmit={handleSubmit} className="admin-form">
                                 <div className="mb-3">
                                     <label htmlFor="username" className="form-label">Username</label>
@@ -66,13 +70,15 @@ export default function AdminLogin() {
                                 )}
                                 <button
                                     type="submit"
-                                    className="btn btn-primary w-100"
+                                    className="btn btn-admin-primary w-100"
                                     disabled={loading}
                                 >
+                                    <i className="bi bi-box-arrow-in-right me-1"></i>
                                     {loading ? 'Logging in...' : 'Login'}
                                 </button>
                                 <div className="text-center mt-3">
                                     <Link href="/admin/register" className="btn btn-link">
+                                        <i className="bi bi-person-plus me-1"></i>
                                         Create New User
                                     </Link>
                                 </div>
@@ -81,6 +87,6 @@ export default function AdminLogin() {
                     </div>
                 </div>
             </div>
-        </div>
+        </AdminLoginLayout>
     );
 }
