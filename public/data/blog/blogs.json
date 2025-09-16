@@ -1,0 +1,21 @@
+{
+  "blogs": [
+    {
+      "id": 1757998678127,
+      "title": "New BLog",
+      "slug": "new-blog",
+      "excerpt": "Test",
+      "content": "<h1>My BLog</h1>",
+      "featuredImage": "/uploads/blog/blog_1757998647203.png",
+      "author": "Stratify Team",
+      "status": "published",
+      "tags": [
+        "test",
+        "new"
+      ],
+      "publishedAt": "2025-09-16T05:19:47.912Z",
+      "createdAt": "2025-09-16T04:57:58.127Z",
+      "updatedAt": "2025-09-16T05:19:47.933Z"
+    }
+  ]
+}

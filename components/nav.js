@@ -48,7 +48,7 @@ export default function nav() {
                             {/* <li><Link className={router.pathname == "/portfolio" ? "active" : ""} href="portfolio">Portfolio</Link></li> */}
                             {/* <li><Link className={router.pathname == "/team" ? "active" : ""} href="team">Team</Link></li> */}
                             {/* <li><Link className={router.pathname == "/pricing" ? "active" : ""} href="pricing">Pricing</Link></li> */}
-                            {/* <li><Link className={router.pathname == "/blog" ? "active" : ""} href="blog">Blog</Link></li> */}
+                            <li><Link className={router.pathname == "/blog" ? "active" : ""} href="blog">Blog</Link></li>
                             <li><Link className={router.pathname == "/contact" ? "active" : ""} href="contact">Contact</Link></li>
                             <li><Link className={router.pathname == "/privacy-policy" ? "active" : ""} href="privacy-policy">Privacy Policy</Link></li>
                         </ul>
