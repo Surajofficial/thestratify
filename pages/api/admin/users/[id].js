@@ -29,7 +29,7 @@ export default function handler(req, res) {
         switch (method) {
             case 'GET':
                 // Return single user (without password)
-                const { password, ...safeUser } = users[userIndex];
+                const { password: _pw, ...safeUser } = users[userIndex];
                 res.status(200).json({ user: safeUser });
                 break;
 
